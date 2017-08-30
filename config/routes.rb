@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   end
   
   devise_for :users
-  root to: "home#index"
+  root to: "rankings#index"
   get '/history', to: 'home#history'
   get '/log',     to: 'home#log'
 end
