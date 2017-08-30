@@ -1,3 +1,15 @@
+The scores are put under the next conditions
+
+1.- If the user win the game and the oponent has a slow score: 10 points are assigned
+2.- If the user win the game and the oponent has a high score: 100 points are assigned
+3.- If the user win the game and the oponent has the same score: 1 points are assigned
+
+In contrary case the points are assigned to the oponent.
+
+The games played are increment for the user and the oponent.
+
+
+
 ## Getting Started
 
 1. Run `bundle`
@@ -26,6 +38,9 @@ Design a solution to populate the leaderboard page with rankings:
   * Not all wins should count the same. e.g: a player ranked 4 beating a player ranked 5 should not count the same as a player ranked 5 beating a player ranked 1
   * When the leaderboard is first created all the users will be equal in ranking
   * Document your approach
+
+  
+
 
 **Please note the following**:
 

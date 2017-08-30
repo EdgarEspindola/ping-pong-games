@@ -7,10 +7,7 @@ class Ranking < ActiveRecord::Base
     
     ranking_user = user.ranking || create_ranking(game.user)
     ranking_oponent = oponent.ranking || create_ranking(game.oponent)
-    
-    #ranking_user  =  if user.ranking.blank?
-    #ranking_oponent  = create_ranking(game.oponent) if oponent.ranking.blank?
-   
+        
     if game.user_score > game.score_oponent      
       ranking_user.score += obtain_score(ranking_user.score, ranking_oponent.score)
     else
