@@ -1,0 +1,28 @@
+<h1 class='page-header'>Leaderboard</h1>
+
+<% if @rankings.blank? %>
+  <h3>No Found Records</h3>
+<% else %>
+  <table>
+    <thead>
+      <tr>      
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Score</th>
+        <th>Games played</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @rankings.each_with_index do |ranking, index| %>
+        <tr>        
+          <td><%= index + 1  %></td>
+          <td><%= ranking.user.email %></td>
+          <td><%= ranking.score %></td>
+          <td><%= ranking.games_played %></td>        
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
